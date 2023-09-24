@@ -1,17 +1,14 @@
-/* Шрифт для сайта */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-
 body {
     background-color: #621402;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.menu-link{
+.menu-link {
     color: #ffffff;
     text-decoration: none;
 }
 
-.menu{
+.menu {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -23,27 +20,96 @@ body {
     margin: auto;
 }
 
-.menu-item{
+.menu-item {
     margin-right: 25px;
 }
 
-.avatar{
+.avatar {
     width: 33px;
     height: 33px;
     border-radius: 50%;
     margin-left: 11px;
 }
 
-.header{
+.navbar {
     display: flex;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.user{
+.user {
     margin-left: auto;
     color: #ffff;
     display: flex;
     align-items: center;
+}
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+        url('../img/bg.jpg') no-repeat center top / cover;
+}
+
+.film {
+    margin-top: 60px;
+    color: #fff;
+}
+
+.film-title-small {
+    opacity: 0.5;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.film-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.film-description {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 570px;
+}
+
+.film {
+    display: flex;
+    align-items: center;
+}
+
+.film-trailer {
+    margin: auto;
+}
+
+.film-details {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-content: center;
+}
+
+.time-icon {
+    margin-right: 14px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.raiting-icon {
+    margin-right: 14px;
+}
+
+.raiting-current {
+    font-size: 24px;
+    line-height: 150%;
 }
