@@ -7,7 +7,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- CSS стили -->
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
@@ -80,6 +80,61 @@
                     </defs>
                 </svg>
             </a>
+        </div>
+
+        <!-- Блок с датами и местами -->
+        <div class="session container">
+            <!-- Блок с датой -->
+            <div class="session-date">
+                <span class="session-label">Дата</span>
+                <div class="session-date-block">
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">27</span>
+                        <span class="session-week">пт</span>
+                    </div>
+
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">28</span>
+                        <span class="session-week">сб</span>
+                    </div>
+
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">29</span>
+                        <span class="session-week">вс</span>
+                    </div>
+
+                    <div class="session-date-item">
+                        <span class="session-month">АПР</span>
+                        <span class="session-day">30</span>
+                        <span class="session-week">пн</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок с местами проведения -->
+            <div class="session-cinema">
+                <span class="session-label">Кинотеатр</span>
+                <select class="select select-cinema" name="cinema">
+                    <option value="Октябрь, ул. Колужская 28">Октябрь, ул. Колужская 28</option>
+                    <option value="Экран, ул. Маршлала Рыбалко 2">Экран, ул. Маршлала Рыбалко 2</option>
+                    <option value="Рубин, ул. Маршлала Рыбалко 234">Рубин, ул. Маршлала Рыбалко 234</option>
+                </select>
+            </div>
+
+            <!-- Блок с местами проведения -->
+            <div class="session-time">
+                <span class="session-label">Время</span>
+                <select class="select" name="cinema">
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+
+                </select>
+            </div>
         </div>
     </header>
 </body>

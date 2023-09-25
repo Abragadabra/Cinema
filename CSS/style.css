@@ -1,11 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #621402;
     font-family: 'Ubuntu', sans-serif;
+    color: #fff;
 }
 
 .menu-link {
-    color: #ffffff;
     text-decoration: none;
+    color: #fff;
 }
 
 .menu {
@@ -40,7 +45,6 @@ body {
 
 .user {
     margin-left: auto;
-    color: #ffff;
     display: flex;
     align-items: center;
 }
@@ -53,7 +57,6 @@ body {
 
 .film {
     margin-top: 60px;
-    color: #fff;
 }
 
 .film-title-small {
@@ -112,4 +115,78 @@ body {
 .raiting-current {
     font-size: 24px;
     line-height: 150%;
+}
+
+.session {
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.session-date-block {
+    display: flex;
+}
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.session-date-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: 0.2s;
+}
+
+.session-month {
+    font-size: 16рх;
+    line-height: 19рх;
+}
+
+.session-day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.session-week {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.session-date-item:hover {
+    background-color: #fe8e05;
+    color: #621402;
+}
+
+.select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.select option {
+    color: #000;
+}
+
+.select-cinema {
+    min-width: 470px;
 }
