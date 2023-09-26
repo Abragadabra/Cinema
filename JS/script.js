@@ -2,6 +2,11 @@ let totalSum = 0
 
 const rubbleSum = document.querySelector('.fee-text-sum')
 const MegaArraySeats = document.querySelectorAll('.seat')
+const MegaArrayIMG = document.querySelectorAll('.seat img')
+
+MegaArrayIMG.forEach(element => {
+    element.setAttribute('draggable', 'false')
+})
 
 MegaArraySeats.forEach(element => {
     element.addEventListener('click', function () {
