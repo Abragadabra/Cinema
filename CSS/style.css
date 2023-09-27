@@ -188,7 +188,7 @@ body {
 }
 
 .select-cinema {
-    min-width: 470px;
+    width: 470px;
 }
 
 .scheme {
@@ -255,6 +255,7 @@ body {
     border-radius: 10px;
     padding: 1.5em;
     margin-top: 62px;
+    overflow-x: auto;
 }
 
 .screen {
@@ -346,4 +347,14 @@ body {
 
 .fee-button button:hover {
     background-color: #fe8e05c1;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .select-cinema {
+        width: 100%;
+    }
 }
