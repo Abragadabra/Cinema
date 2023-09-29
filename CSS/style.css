@@ -459,4 +459,9 @@ body {
     .film {
         flex-direction: column;
     }
+
+    .session-date-item {
+        width: 60px;
+        height: 60px;
+    }
 }
