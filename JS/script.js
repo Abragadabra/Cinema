@@ -26,12 +26,12 @@ MegaArraySeats.forEach(element => {
         }
         else if (element.classList.contains('poked')) {
             element.classList.remove('poked');
-            element.innerHTML = `<img src="img/seat.svg">`;
+            element.innerHTML = `<img src="img/seats/seat.svg">`;
             totalSum -= ticketPrice;
         }
         else {
             element.classList.add('poked');
-            element.innerHTML = `<img src="img/yellow-seat.svg">`;
+            element.innerHTML = `<img src="img/seats/yellow-seat.svg">`;
             totalSum += ticketPrice;
         }
         // Обновляем элемент с суммой

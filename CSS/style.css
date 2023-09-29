@@ -52,7 +52,7 @@ body {
 .header {
     min-height: 100vh;
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
-        url('../img/bg.jpg') no-repeat center top / cover;
+        url('../img/header/bg.jpg') no-repeat center top / cover;
 }
 
 .film {
@@ -256,6 +256,7 @@ body {
     padding: 1.5em;
     margin-top: 62px;
     overflow-x: auto;
+    max-width: 1170px;
 }
 
 .screen {
@@ -357,4 +358,8 @@ body {
     .select-cinema {
         width: 100%;
     }
+}
+
+@media (max-width: 1000px) {
+    
 }
