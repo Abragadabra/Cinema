@@ -464,4 +464,20 @@ body {
         width: 60px;
         height: 60px;
     }
+
+    .session-month {
+        font-size: 10рх;
+        line-height: 15рх;
+    }
+    
+    .session-day {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 15px;
+    }
+    
+    .session-week {
+        font-size: 13px;
+        line-height: 15px;
+    }
 }
