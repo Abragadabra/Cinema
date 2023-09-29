@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Мета данные -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кинотеатр</title>
@@ -11,8 +12,11 @@
     <!-- CSS стили -->
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- Иконка во вкладке браузера -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Заголовок -->
     <header class="header">
         <div class="navbar container">
             <!-- Логотип сайта -->
@@ -51,7 +55,7 @@
                     Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё 
                     не была столь неопределённой.
                 </p>
-                <!-- Время и рейтинг -->
+                <!-- Длительность и рейтинг фильма -->
                 <div class="film-details">
                     <div class="time">
                         <img src="img/clock.svg" alt="clock" class="time-icon">
@@ -114,7 +118,7 @@
                 </div>
             </div>
 
-            <!-- Блок с местами проведения -->
+            <!-- Блок с адресами кинотеатров -->
             <div class="session-cinema">
                 <span class="session-label">Кинотеатр</span>
                 <select class="select select-cinema" name="cinema">
@@ -124,7 +128,7 @@
                 </select>
             </div>
 
-            <!-- Блок с местами проведения -->
+            <!-- Блок с временем проведения сеанса -->
             <div class="session-time">
                 <span class="session-label">Время</span>
                 <select class="select" name="cinema">
@@ -136,6 +140,7 @@
             </div>
         </div>
     </header>
+    <!-- Блок с залом кинотеатра -->
     <div class="cinema-room container">
         <div class="screen container">
             <hr class="screen-line container">
@@ -329,6 +334,7 @@
 
         <hr class="line">
 
+        <!-- Легенда схемы зала -->
         <div class="seats-legend">
             <div class="seats-about">
                 <img draggable="false" src="img/seat.svg">
@@ -347,17 +353,20 @@
         </div>
     </div>
     
+    <!-- Блок с суммой -->
     <div class="fee container">
         <div class="fee-sum">
             <span class="fee-text-about">Всего к оплате</span>
             <span class="fee-text-sum">0</span>
         </div>
 
+        <!-- Кнопка перехода к оплате -->
         <div class="fee-button">
             <button>Перейти к оплате</button>
         </div>
     </div>
 
-<script src="JS/script.js"></script>
+    <!-- Подключение основного скрипта JS -->
+    <script src="JS/script.js"></script>
 </body>
 </html>
