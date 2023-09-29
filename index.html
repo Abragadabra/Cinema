@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="CSS/style.css">
     <!-- Иконка во вкладке браузера -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Плагин для модального окна видео -->
+    <link rel="stylesheet" href="CSS/videotube.min.css">
+
 </head>
 <body>
     <!-- Заголовок -->
@@ -26,6 +29,16 @@
         
             <!-- Главное меню сайта -->
             <nav class="nav">
+                <!-- Кнопка, которая расскрывает меню при маленьком разрешении -->
+                <button class="m-menu">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+                        <line y1="4.5" x2="15" y2="4.5" stroke="white"/>
+                        <line y1="8.5" x2="15" y2="8.5" stroke="white"/>
+                    </svg>
+                        
+                </button>
+
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Фильмы</a></li>
@@ -70,7 +83,7 @@
                 </div>
             </div>
             <!-- Ссылка-изображение для значка трейлера -->
-            <a href="#" class="film-trailer">
+            <a href="https://www.youtube.com/watch?v=tDCH7-lteAc" class="film-trailer tube">
                 <!-- Картинка начала просмотра в виде кода SVG -->
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="50" cy="50" r="50" fill="white"/>
@@ -366,6 +379,8 @@
         </div>
     </div>
 
+    <!-- JS скрипт плагина -->
+    <script src="JS/videotube.min.js"></script>
     <!-- Подключение основного скрипта JS -->
     <script src="JS/script.js"></script>
 </body>

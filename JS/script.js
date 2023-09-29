@@ -2,10 +2,13 @@
 // ticketPrice - цена одного билета
 // MegaArraySeats - массив сидений
 // MegaArrayIMG - массив изображений сидений
+// burgerButton - кнопка бургер-меню
 const rubbleSum = document.querySelector('.fee-text-sum');
 const ticketPrice = 500;
 const MegaArraySeats = document.querySelectorAll('.seat');
 const MegaArrayIMG = document.querySelectorAll('.seat img');
+const burgerButton = document.querySelector('.m-menu');
+const burgerMenu = document.querySelector('.menu');
 
 // totalSum - итоговая сумма
 let totalSum = 0;
@@ -36,7 +39,12 @@ MegaArraySeats.forEach(element => {
         }
         // Обновляем элемент с суммой
         updateSum();
-    })
+    });
+});
+
+// Событие при нажатии на кнопку бургер
+burgerButton.addEventListener('click', function () {
+    burgerMenu.classList.toggle('is-open');
 });
 
 // Функция обновления элемента с суммой, которая заменяем текст на сумму
