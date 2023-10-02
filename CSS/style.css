@@ -90,6 +90,8 @@ body {
 .film {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
 }
 
 .film-trailer {
@@ -357,6 +359,10 @@ body {
 
 .fee-button button:hover {
     background-color: #fe8e05c1;
+}
+
+.carousel {
+    margin-top: 62px;
 }
 
 @media (max-width: 1200px) {
