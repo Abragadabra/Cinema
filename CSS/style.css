@@ -200,6 +200,10 @@ option {
     background-color: #621402;
 }
 
+select option:checked {
+  background-color: #982106;
+}
+
 .select-cinema {
     width: 470px;
 }
